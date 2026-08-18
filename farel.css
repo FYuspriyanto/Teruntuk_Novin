@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section, article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    background-color: #ff6785; /* Warna latar belakang */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 15px; /* Memberi spasi 1 baris dari teks di atasnya */
+  border-radius: 8px;
+}
+.btn-back {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5e7e; /* Warna pink menyesuaikan header */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;      /* Memberi jarak ke foto/isi di bawahnya */
+  transition: background 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #e04867; /* Warna sedikit lebih gelap saat di-hover */
+}
+
+
+@media (max-width: 600px) {
+  article {
+    width: 95%;           /* Lebih lebar sedikit di layar HP */
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 18px;      /* Ukuran judul atas menyesuaikan layar HP */
+  }
+
+  img {
+    width: 100%;          /* Gambar selalu pas dengan lebar kartu */
+    height: auto;
+  }
+}
+
+header {
+  position: relative;
+  background-color: #ff5e7e;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.btn-back-circle {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+  background-color: #ff758f;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back-circle:hover {
+  background-color: #ff4d6d;
+}

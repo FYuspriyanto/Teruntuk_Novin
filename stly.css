@@ -1,0 +1,185 @@
+/* ===================================================
+   PENGATURAN DASAR & TIPOGRAFI
+   =================================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section, article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ===================================================
+   TASK 1: HEADER & NAVIGASI
+   =================================================== */
+header {
+    background-color: #ff6785; /* Warna latar belakang */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Hilangkan bullet list navigasi */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Sesuaikan warna teks link */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #ff6785;
+}
+
+/* ===================================================
+   TASK 2: FORMULIR UI
+   =================================================== */
+form input[type="text"],
+form select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px; /* Berikan ruang bernapas (padding) */
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #ff6785;
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: #ff6785;
+    color: #ffffff;
+    padding: 10px 24px; /* Ruang bernapas tombol */
+    border: none;
+    border-radius: 20px; /* Haluskan sudut tombol */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ff6785;
+}
+
+/* ===================================================
+   TASK 3: TABEL DATA W3C
+   =================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Rapatkan garis batas */
+    margin-top: 10px;
+}
+
+table th, 
+table td {
+    border: 1px solid #dddddd;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #ff6785;
+    color: #ffffff;
+}
+
+/* Efek Zebra Striping untuk keterbacaan data */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e2e8f0;
+    color: #ff6785;
+    font-size: 14px;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 15px; /* Memberi spasi 1 baris dari teks di atasnya */
+  border-radius: 8px;
+}
+
+.teks-rapat {
+  margin: 3px 0;      /* Atur jarak atas-bawah jadi sangat tipis (3px) */
+  line-height: 1.2;    /* Membuat tinggi baris teks lebih rapat */
+}
+
+@media (max-width: 600px) {
+  article {
+    width: 95%;           /* Lebih lebar sedikit di layar HP */
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 18px;      /* Ukuran judul atas menyesuaikan layar HP */
+  }
+
+  img {
+    width: 100%;          /* Gambar selalu pas dengan lebar kartu */
+    height: auto;
+  }
+}
+
+/* Atur gambar agar fleksibel */
+img {
+  width: 100%;            /* Gambar otomatis menyesuaikan lebar HP */
+  height: auto;           /* Biar gambar ga gepeng */
+  display: block;
+}
+
+/* TARO DI BARIS PALING BAWAH FILE stly.css */
+@media (max-width: 600px) {
+  article {
+    width: 95%;          /* Di HP kartu putihnya lebih lebar dikit */
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 18px;     /* Judul atas ukurannya menyesuaikan HP */
+  }
+}
